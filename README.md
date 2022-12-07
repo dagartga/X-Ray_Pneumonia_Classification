@@ -2,7 +2,21 @@
 
 **-----This Project is for Educational Purposes Only-----**
 
-**Name of your Device:** X-Ray Pneumonia Diagnosis Assistant
+### Main Directory
+- 2D_Medical_Imaging
+### Notebooks
+- EDA.ipynb
+- Build and train model.ipynb
+- Inference.ipynb
+### Data Files
+- pneumonia_predictions_df.csv
+- sample_labels.csv
+### Final Model
+- my_model.json
+### DICOM Files
+- test1.dcm, test2.dcm, test3.dcm, test4.dcm, test5.dcm, test6.dcm
+### Sample FDA Submission
+- FDA_Submission_Template.md
 
 ## Algorithm Description 
 
