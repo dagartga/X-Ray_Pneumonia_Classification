@@ -2,7 +2,21 @@
 
 **-----This Project is for Educational Purposes Only-----**
 
-**Name of your Device:** X-Ray Pneumonia Diagnosis Assistant
+### Main Directory
+- ![2D_Medical_Imaging](./2D_Medical_Imaging/)
+### Notebooks
+- ![EDA.ipynb](./2D_Medical_Imaging/EDA.ipynb)
+- ![Build_and_train_model.ipynb](./2D_Medical_Imaging/Build_and_train_model.ipynb)
+- ![Inference.ipynb](./2D_Medical_Imaging/Inference.ipynb)
+### Data Files
+- ![pneumonia_predictions_df.csv](./2D_Medical_Imaging/pneumonia_predictions_df.csv)
+- ![sample_labels.csv](./2D_Medical_Imaging/sample_labels.csv)
+### Final Model
+- ![my_model.json](./2D_Medical_Imaging/my_model.json)
+### DICOM Files
+- test1.dcm, test2.dcm, test3.dcm, test4.dcm, test5.dcm, test6.dcm
+### Sample FDA Submission
+- ![FDA_Submission_Template.md](./2D_Medical_Imaging/FDA_Submission_Template.md)
 
 ## Algorithm Description 
 
@@ -32,7 +46,7 @@ When these comorbidities are present it significantly affects the Recall and F1 
     Pneumothorax Stats:
     Recall: 0.18
     F1 Score: 0.30
-![F1 Comorbidities](./2D_Medical_Imaging/images/F1_Comorbidities.png)
+![F1 Comorbidities](./2D_Medical_Imaging/images/F1_Scores_Comorbidities.png)
 
 ![Recall Comorbidities](./2D_Medical_Imaging/images/Recall_Comorbidities.png)
 
@@ -48,19 +62,19 @@ The statistics for the model are:
     - Precision: 0.316
     - Specificity: 0.416
 
-This means that the chance of a pneumonia case X-ray image being labeled as No Pneumonia is only 18.6% and that means that the Pneumonia cases will be very likely marked as such a allow the radiologist to be alerted. The trade-off that of a high number of false positives indicated by 1 - Precision means that 68.4% of the Pneumonia labeled images will actually be No Pneumonia but the radiologist will inspect them closely to make the final diagnosis. Since the F1 score is higher than the current best pneumonia X-ray algorithm, it can assist the radiologists more efficiently.
+This means that the chance of a pneumonia case X-ray image being labeled as No Pneumonia is only 18.6%, which means that the Pneumonia cases will be very likely marked as such a allow the radiologist to be alerted. The trade-off that of a high number of false positives indicated by 1 - Precision means that 68.4% of the Pneumonia labeled images will actually be No Pneumonia but the radiologist will inspect them closely to make the final diagnosis. Since the F1 score is higher than the current best pneumonia X-ray algorithm, it can assist the radiologists more efficiently.
 
 **F1 Scores:**
 
-| Radiologist Avg. | 0.387 |
-| CheXNet          | 0.435 |
-| Proposed Model   | 0.456 |
+- Radiologist Avg. : 0.387 
+- CheXNet          : 0.435 
+- **Proposed Model   : 0.456** 
 
 
 
 ### 2. Algorithm Design and Function
 
-![Algorithm Flowchart](./2D_Medical_Imaging/images/Algorithm_Flowchart.png)
+![Algorithm Flowchart](./2D_Medical_Imaging/images/Algorithm_FlowChart.png)
 
 **DICOM Checking Steps:**
 
