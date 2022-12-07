@@ -1,6 +1,9 @@
 # X-Ray Pneumonia Classifier
 
 **-----This Project is for Educational Purposes Only-----**
+<br>
+<br/>
+_This was part of the Udacity AI in Healthcare program_
 
 ### Main Directory
 - ![2D_Medical_Imaging](./2D_Medical_Imaging/)
