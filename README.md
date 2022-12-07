@@ -1,6 +1,6 @@
 # X-Ray Pneumonia Classifier
 
-**Project for Educational Purposes Only**
+**-----This Project is for Educational Purposes Only-----**
 
 **Name of your Device:** X-Ray Pneumonia Diagnosis Assistant
 
@@ -32,9 +32,9 @@ When these comorbidities are present it significantly affects the Recall and F1 
     Pneumothorax Stats:
     Recall: 0.18
     F1 Score: 0.30
-![F1 Comorbidities](F1_Comorbidities.png)
+![F1 Comorbidities](./2D_Medical_Imaging/images/F1_Comorbidities.png)
 
-![Recall Comorbidities](Recall_Comorbidities.png)
+![Recall Comorbidities](./2D_Medical_Imaging/images/Recall_Comorbidities.png)
 
 
 **Clinical Impact of Performance:**
@@ -60,7 +60,7 @@ This means that the chance of a pneumonia case X-ray image being labeled as No P
 
 ### 2. Algorithm Design and Function
 
-![Algorithm Flowchart](Algorithm_Flowchart.png)
+![Algorithm Flowchart](./2D_Medical_Imaging/images/Algorithm_Flowchart.png)
 
 **DICOM Checking Steps:**
 
@@ -208,24 +208,24 @@ _________________________________________________________________
 
 #### Model Results
 
-![Model Loss](Model_Loss.png)
+![Model Loss](./2D_Medical_Imaging/images/Model_Loss.png)
 The training set loss is consistently decreasing throughout the training, but the testing loss value is not consistent. This could be caused by not having a broad enough range of images in the testing dataset. This shows that the model may have over-trained on the training data and may need more bias added to become more generalized.
 
-![Model Accuracy](Model_Accuracy.png)
+![Model Accuracy](./2D_Medical_Imaging/images/Model_Accuracy.png)
 The accuracy of the training set consistently increases over the epochs. As well, the testing accuracy also improves dramatically from its starting amount. The testing accuracy has much more variance between epochs and as stated above may be due to it not being a broad enough range of images to be representative of what the model was trained on. Further analysis into the proportion of different co-morbidities and combinations of disease would be a good follow-up.
 
-![Precision Recall](Precision_Recall.png)
+![Precision Recall](./2D_Medical_Imaging/images/Precision_Recall.png)
 If the model requires precision to be optimized, then (Precision = 0.5, Recall = 0.3) provides a good optimization. If the model requires more recall to be optimized, then (Precision = 0.45, Recall = 0.5) would be a good optimization and this allows recall to be fairly high without losing much precision.
 
 #### Model Statistics using different Thresholds
-![ROC Curve](ROC_Curve.png)
+![ROC Curve](./2D_Medical_Imaging/images/ROC_Curve.png)
 The ROC curve shows that the model definitely performs better than random guessing but is not amazingly better.
 
-![F1 Scores](F1_Scores.png)
+![F1 Scores](./2D_Medical_Imaging/images/F1_Scores.png)
 
 From threshold 0.32 to 0.47 the F1 score stays fairly flat and is at a large value. This gives a good range to choose from for the threshold.
 
-![Precision and Recall vs Threshold](Model_Stats.png)
+![Precision and Recall vs Threshold](./2D_Medical_Imaging/images/Model_Stats.png)
 
 For this specific use case, it seems more important to have a higher Recall since that indicates there are fewer False Negatives, meaning pneumonia cases predicted as no pneumonia. By reducing the number of False Negatives, we may have more False Positives, but as can be seen from the Precision Recall curve, the Precision only increases slightly, while Recall drops much more dramatically. Therefor we gain a lot of Recall while losing a little Precision by choosing a **threshold of 0.30** as opposed to 0.5 where the Recall has significantly decreased.
 
@@ -255,7 +255,7 @@ Results from [CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rayswith
 **Description of Training Dataset:** 
 The training dataset contains 2290 images, which contains 1145 images with pneumonia and 1145 images with no pneumonia. This is a 50:50 split of positive labeled images to negative labeled images, to improve training of the model.
 
-![X-Ray Image Examples](X-Ray_Images.png)
+![X-Ray Image Examples](./2D_Medical_Imaging/images/X-Ray_Images.png)
 
 
 **Description of Validation Dataset:** 
