@@ -3,20 +3,20 @@
 **-----This Project is for Educational Purposes Only-----**
 
 ### Main Directory
-- 2D_Medical_Imaging
+- ![2D_Medical_Imaging](./2D_Medical_Imaging/)
 ### Notebooks
-- EDA.ipynb
-- Build and train model.ipynb
-- Inference.ipynb
+- ![EDA.ipynb](./2D_Medical_Imaging/EDA.ipynb)
+- ![Build_and_train_model.ipynb](./2D_Medical_Imaging/Build_and_train_model.ipynb)
+- ![Inference.ipynb](./2D_Medical_Imaging/Inference.ipynb)
 ### Data Files
-- pneumonia_predictions_df.csv
-- sample_labels.csv
+- ![pneumonia_predictions_df.csv](./2D_Medical_Imaging/pneumonia_predictions_df.csv)
+- ![sample_labels.csv](./2D_Medical_Imaging/sample_labels.csv)
 ### Final Model
-- my_model.json
+- ![my_model.json](./2D_Medical_Imaging/my_model.json)
 ### DICOM Files
 - test1.dcm, test2.dcm, test3.dcm, test4.dcm, test5.dcm, test6.dcm
 ### Sample FDA Submission
-- FDA_Submission_Template.md
+- ![FDA_Submission_Template.md](./2D_Medical_Imaging/FDA_Submission_Template.md)
 
 ## Algorithm Description 
 
